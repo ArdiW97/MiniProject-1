@@ -1,0 +1,593 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(https://media.suara.com/pictures/970x544/2021/09/08/73441-ilustrasi-langit-malam.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+/* Landing Page */
+.hd-movies {
+  position: relative;
+}
+
+.card-text-movies {
+  font-size: 200%;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #fff;
+}
+
+.card-text-moviess {
+  text-align: center;
+  font-size: 150%;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  position: absolute;
+  top: 70%;
+  left: 15%;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+}
+
+/* Search */
+.search-box {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 14px 18px;
+  border-radius: 40px;
+}
+
+.search-icon {
+  color: #404258;
+}
+
+.search-input {
+  transition: 0.5s;
+  width: 0px;
+  overflow: hidden;
+}
+
+.search-box:hover .search-input {
+  width: 200px;
+  margin-left: 20px;
+}
+
+.input {
+  border: none;
+  outline: none;
+}
+
+/* Navbar */
+.nav-item {
+  color: whitesmoke;
+}
+
+.nav-link {
+  color: whitesmoke;
+}
+
+.navbar-brand span {
+  transition: 0.2s ease-in-out;
+}
+
+.navbar-brand:hover span:nth-child(1) {
+  margin-right: 5px;
+}
+
+.navbar-brand:hover span:nth-child(2) {
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.navbar-brand:hover span:nth-child(3) {
+  margin-left: 5px;
+}
+
+.navbar-brand:hover span {
+  color: #EEEEEE;
+  text-shadow: 0 0 10px #EEEEEE, 0 0 20px #EEEEEE;
+}
+
+.navbar-brand>span {
+  font-family: 'Lobster', cursive;
+  color: #f6a973;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 49px;
+}
+
+.navbar-brand {
+  font-family: Georgia, 'Times New Roman', Times, serif, monospace;
+}
+
+.navbar-brand:hover {
+  color: #30edf4;
+  font-family: Georgia, 'Times New Roman', Times, serif, monospace;
+}
+
+.collapse {
+  font-family: Georgia, 'Times New Roman', Times, serif, monospace;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar ul li {
+  list-style: none;
+  font-size: 15px;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 1px;
+  transition: 0.5s ease;
+}
+
+.nav-link:hover {
+  color: #30edf4;
+}
+
+.dropdown-item:hover {
+  color: #30edf4;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+  position: absolute;
+  top: 80px;
+}
+
+/* Login */
+.login-box {
+  position: absolute;
+  top: 300px;
+  left: 50%;
+  width: 400px;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, .5);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
+  border-radius: 10px;
+}
+
+.login-box h2 {
+  margin: 0 0 30px;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+}
+
+.login-box .user-box {
+  position: relative;
+}
+
+.login-box .user-box input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+
+.login-box .user-box label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: .5s;
+}
+
+.login-box .user-box input:focus~label,
+.login-box .user-box input:valid~label {
+  top: -20px;
+  left: 0;
+  color: #03e9f4;
+  font-size: 12px;
+}
+
+.login-box form a {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #03e9f4;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: .5s;
+  margin-top: 40px;
+  letter-spacing: 4px
+}
+
+.login-box a:hover {
+  background: #03e9f4;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #03e9f4,
+    0 0 25px #03e9f4,
+    0 0 50px #03e9f4,
+    0 0 100px #03e9f4;
+}
+
+.login-box a span {
+  position: absolute;
+  display: block;
+}
+
+.login-box a span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #03e9f4);
+  animation: btn-anim1 1s linear infinite;
+}
+
+@keyframes btn-anim1 {
+  0% {
+    left: -100%;
+  }
+
+  50%,
+  100% {
+    left: 100%;
+  }
+}
+
+.login-box a span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #03e9f4);
+  animation: btn-anim2 1s linear infinite;
+  animation-delay: .25s
+}
+
+@keyframes btn-anim2 {
+  0% {
+    top: -100%;
+  }
+
+  50%,
+  100% {
+    top: 100%;
+  }
+}
+
+.login-box a span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #03e9f4);
+  animation: btn-anim3 1s linear infinite;
+  animation-delay: .5s
+}
+
+@keyframes btn-anim3 {
+  0% {
+    right: -100%;
+  }
+
+  50%,
+  100% {
+    right: 100%;
+  }
+}
+
+.login-box a span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #03e9f4);
+  animation: btn-anim4 1s linear infinite;
+  animation-delay: .75s
+}
+
+@keyframes btn-anim4 {
+  0% {
+    bottom: -100%;
+  }
+
+  50%,
+  100% {
+    bottom: 100%;
+  }
+}
+
+/* Carousel */
+.countainer-carousel {
+  width: 100%;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-inner {
+  top: -15px;
+  width: 100%;
+  border-radius: 3%;
+}
+
+.carousel {
+  width: 1000px;
+  height: 500px;
+}
+
+.carousel img {
+  width: 1000px;
+  height: 500px;
+}
+
+#Line {
+  border-width: 3px;
+  border-style: solid;
+  color: black;
+}
+
+/* card */
+.card:hover {
+  translate: 0 -15px;
+  box-shadow: 5px 3px rgb(red, green, blue),
+}
+
+.card {
+  margin: 10px;
+  background: url(https://media.suara.com/pictures/970x544/2021/09/08/73441-ilustrasi-langit-malam.jpg) center no-repeat;
+  background-size: cover;
+  border-radius: 48px;
+  transform: rotate(0deg) skew(0deg, 0deg);
+  transition: translate 0.25s, box-shadow 0.25s;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card img {
+  border-radius: 35px;
+  border-top-left-radius: 10%;
+  border-top-right-radius: 10%;
+
+}
+
+.glow-on-hover {
+  width: 100%;
+  height: 50px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+}
+
+.glow-on-hover:before {
+  content: '';
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px;
+}
+
+.glow-on-hover:active {
+  color: #000
+}
+
+.glow-on-hover:active:after {
+  background: transparent;
+}
+
+.glow-on-hover:hover:before {
+  opacity: 1;
+}
+
+.glow-on-hover:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+
+  50% {
+    background-position: 400% 0;
+  }
+
+  100% {
+    background-position: 0 0;
+  }
+}
+
+/* Modal card */
+.title {
+  color: #17a2b8;
+  font-family: itim;
+}
+
+.details {
+  font-size: 20px;
+}
+
+.desc {
+  font-size: 20px;
+  color: #EEEEEE;
+  font-family: itim;
+}
+
+.modal-body ul li {
+  display: list-item;
+  color: #EEEEEE;
+  font-family: itim;
+}
+
+/* section */
+section {
+  background-image: url(https://images.pexels.com/photos/237898/pexels-photo-237898.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  color: white;
+  font-size: 13px;
+  width: 100%;
+  font-style: normal;
+}
+
+/* footer */
+footer {
+  background-color: black;
+}
+
+footer ul li {
+  list-style: none;
+}
+
+footer ul h5 {
+  color: #EEEEEE;
+  font-weight: bold;
+  font-family: itim;
+}
+
+footer ul li a {
+  color: #EEEEEE;
+  text-decoration: none;
+  font-family: itim;
+}
+
+.col-auto {
+  color: #EEEEEE;
+  font-family: itim;
+}
+
+.copyright1 {
+  color: #fff;
+  text-align: center;
+  width: 100%;
+}
+
+/* SOSMED */
+.wrapper {
+  display: inline-flex;
+  list-style: none;
+}
+
+.wrapper .icon {
+  position: relative;
+  background: #ffffff;
+  border-radius: 50%;
+  padding: 15px;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip {
+  position: absolute;
+  top: 0;
+  font-size: 14px;
+  background: #ffffff;
+  color: #ffffff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background: #ffffff;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .icon:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .facebook:hover,
+.wrapper .facebook:hover .tooltip,
+.wrapper .facebook:hover .tooltip::before {
+  background: #1877F2;
+  color: #ffffff;
+}
+
+.wrapper .whatsapp:hover,
+.wrapper .whatsapp:hover .tooltip,
+.wrapper .whatsapp:hover .tooltip::before {
+  background: green;
+  color: #ffffff;
+}
+
+.wrapper .instagram:hover,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip::before {
+  background: #E4405F;
+  color: #ffffff;
+}
+
+.wrapper .github:hover,
+.wrapper .github:hover .tooltip,
+.wrapper .github:hover .tooltip::before {
+  background: #333333;
+  color: #ffffff;
+}
