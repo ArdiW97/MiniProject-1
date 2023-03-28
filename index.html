@@ -6,6 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>T-Movies - Pantai Timur</title>
+  
+  <script src="script.js" defer></script>
   <!--BS-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
@@ -25,7 +27,7 @@
     href="https://fonts.googleapis.com/css2?family=Lobster&family=Noto+Sans+JP:wght@500&family=Open+Sans:wght@700&display=swap"
     rel="stylesheet">
 
-<body>
+<body onload="myFunction()">
   <!--Navbar-->
   <nav class="navbar navbar-expand-lg bg-dark">
     <div class="container-fluid">
@@ -85,8 +87,7 @@
     <img src="https://cdn.pixabay.com/photo/2022/06/20/11/34/spiderman-7273540_960_720.jpg" class="card-img-top"
       alt="...">
     <div class="card-body">
-      <p class="card-text-movies">
-        Thank you for visiting T-Movies, the best movie trailer site to find your favorite entertainment.
+      <p class="card-text-movies" id="textbanner">
       </p>
       <p class="card-text-moviess">
         Find where to stream new, popular & upcoming entertainment with T-Movies.</br>
@@ -337,7 +338,7 @@
         <div class="d-grid gap-2 col-2 mx-auto">
           <a target="https://tv.lk21official.live/black-adam-2022/"
             href="https://tv.lk21official.live/black-adam-2022/">
-            <button class="glow-on-hover" style="margin-bottom: 10px" type="button">Watch Movie</button></a>
+            <button class="glow-on-hover" style="margin-bottom: 10px" type="button" onclick="ok()">Watch Movie</button></a>
         </div>
       </div>
     </div>
@@ -379,7 +380,7 @@
         <div class="d-grid gap-2 col-2 mx-auto">
           <a target="https://tv.lk21official.live/black-hawk-2001/"
             href="https://tv.lk21official.live/black-hawk-2001/">
-            <button class="glow-on-hover" style="margin-bottom: 10px" type="button">Watch Movie</button></a>
+            <button class="glow-on-hover" style="margin-bottom: 10px" type="button" onclick="ok()">Watch Movie</button></a>
         </div>
       </div>
     </div>
@@ -421,7 +422,7 @@
         </div>
         <div class="d-grid gap-2 col-2 mx-auto">
           <a target="https://tv.lk21official.live/the-call-2020/" href="https://tv.lk21official.live/the-call-2020/">
-            <button class="glow-on-hover" style="margin-bottom: 10px" type="button">Watch Movie</button></a>
+            <button class="glow-on-hover" style="margin-bottom: 10px" type="button" onclick="ok()">Watch Movie</button></a>
         </div>
       </div>
     </div>
@@ -465,7 +466,7 @@
         <div class="d-grid gap-2 col-2 mx-auto">
           <a target="https://anoboy.pro/movie/2022-09-the-last-naruto-the-movie/"
             href="https://anoboy.pro/movie/2022-09-the-last-naruto-the-movie/">
-            <button class="glow-on-hover" style="margin-bottom: 10px" type="button">Watch Movie</button></a>
+            <button class="glow-on-hover" style="margin-bottom: 10px" type="button" onclick="ok()">Watch Movie</button></a>
         </div>
       </div>
     </div>
@@ -487,13 +488,13 @@
               <input type="password" name="" required="">
               <label>Password</label>
             </div>
-            <a href="#">
+            <button class="btnn" id="btnnn" onclick="changeButtonDesc()" href="#">
               <span></span>
               <span></span>
               <span></span>
               <span></span>
-              Submit
-            </a>
+              Login
+            </button>
           </form>
         </div>
       </div>
@@ -581,6 +582,11 @@
         </div>
       </footer>
 
+
+      <!-- <script>
+
+        document.getElementById("textbanner").innerHTML = "Thank you for visiting T-Movies, the best movie trailer site to find your favorite entertainment."
+      </script> -->
 </body>
 
 </html>
